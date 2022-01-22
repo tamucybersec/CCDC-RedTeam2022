@@ -1,0 +1,54 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:10:24 2022 as: nmap -sC -sV -oN 25.txt 172.16.16.25
+Nmap scan report for 172.16.16.25
+Host is up (0.045s latency).
+Not shown: 989 closed ports
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 44:c4:b3:74:4d:23:a8:10:33:0e:bb:e0:bd:7f:25:ae (RSA)
+|   256 f9:26:2e:23:7d:bf:fd:db:44:5c:29:31:ed:4a:a3:64 (ECDSA)
+|_  256 d6:1f:f5:6a:96:e4:36:2c:97:2d:77:79:7d:6d:c2:7f (ED25519)
+25/tcp   open  smtp        Postfix smtpd
+|_smtp-commands: mail.microspace.lowcoal, PIPELINING, SIZE 11534336, ETRN, STARTTLS, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+| ssl-cert: Subject: commonName=mail.microspace.lowcoal
+| Not valid before: 2019-12-20T06:47:11
+|_Not valid after:  2020-12-19T06:47:11
+|_ssl-date: TLS randomness does not represent time
+80/tcp   open  http        nginx 1.16.1
+|_http-server-header: nginx/1.16.1
+|_http-title: Microspace Mail :: Welcome to Microspace Mail
+|_http-trane-info: Problem with XML parsing of /evox/about
+110/tcp  open  pop3        Dovecot pop3d
+|_pop3-capabilities: AUTH-RESP-CODE USER PIPELINING RESP-CODES TOP UIDL SASL(PLAIN LOGIN) CAPA STLS
+|_ssl-date: TLS randomness does not represent time
+143/tcp  open  imap        Dovecot imapd
+|_imap-capabilities: post-login STARTTLS capabilities Pre-login more listed LOGIN-REFERRALS LITERAL+ IMAP4rev1 AUTH=LOGINA0001 have SASL-IR IDLE AUTH=PLAIN OK ENABLE ID
+|_ssl-date: TLS randomness does not represent time
+443/tcp  open  ssl/http    nginx 1.16.1
+|_http-server-header: nginx/1.16.1
+|_http-title: Microspace Mail :: Welcome to Microspace Mail
+|_http-trane-info: Problem with XML parsing of /evox/about
+| ssl-cert: Subject: commonName=mail.microspace.lowcoal
+| Not valid before: 2019-12-20T06:47:11
+|_Not valid after:  2020-12-19T06:47:11
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+587/tcp  open  smtp        Postfix smtpd
+|_smtp-commands: mail.microspace.lowcoal, PIPELINING, SIZE 11534336, ETRN, STARTTLS, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+| ssl-cert: Subject: commonName=mail.microspace.lowcoal
+| Not valid before: 2019-12-20T06:47:11
+|_Not valid after:  2020-12-19T06:47:11
+|_ssl-date: TLS randomness does not represent time
+993/tcp  open  ssl/imaps?
+|_ssl-date: TLS randomness does not represent time
+995/tcp  open  ssl/pop3s?
+|_ssl-date: TLS randomness does not represent time
+3306/tcp open  mysql       MariaDB (unauthorized)
+9000/tcp open  cslistener?
+Service Info: Host: mail.microspace.lowcoal
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 22 17:13:20 2022 -- 1 IP address (1 host up) scanned in 175.97 seconds

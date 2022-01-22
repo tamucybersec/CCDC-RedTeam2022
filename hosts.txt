@@ -1,0 +1,11 @@
+Box Name	OS	IP Address
+Boruto	Windows	172.16.16.30
+Gaara	Linux (Router)	18.116.252.88
+Hokage	Linux	172.16.16.25
+Itatchi	Linux	172.16.16.60
+Jiraiya	Linux	172.16.16.77
+Kakashi	Linux 	172.16.16.67
+Naruto	Windows	172.16.16.35
+Orochimaru	Linux	172.16.16.9
+RockLee	Windows	172.16.16.83
+Tsunade	Windows	172.16.16.68

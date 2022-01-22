@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:09:59 2022 as: nmap -sC -sV -oN 9.txt 172.16.16.9
+Nmap scan report for 172.16.16.9
+Host is up (0.044s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 6b:a3:a7:41:1b:1d:51:89:56:e0:f3:08:98:e9:0e:c1 (DSA)
+|   2048 0b:b3:ce:6c:69:5d:cf:6a:6b:ff:e4:64:64:94:bb:bc (RSA)
+|   256 a8:d1:79:0b:91:39:86:59:e5:75:1c:34:1f:82:40:fe (ECDSA)
+|_  256 6c:50:20:a7:b4:8b:9d:45:57:53:11:d3:6f:e6:03:6b (ED25519)
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+|_http-generator: Drupal 7 (http://drupal.org)
+| http-robots.txt: 36 disallowed entries (15 shown)
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+|_/LICENSE.txt /MAINTAINERS.txt
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Error | Drupal
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 22 17:10:10 2022 -- 1 IP address (1 host up) scanned in 11.09 seconds

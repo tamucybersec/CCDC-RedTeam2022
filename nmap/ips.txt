@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:06:13 2022 as: nmap -sn -oN ips.txt 172.16.16.0/24
+Nmap scan report for 172.16.16.1
+Host is up (0.046s latency).
+Nmap scan report for 172.16.16.9
+Host is up (0.046s latency).
+Nmap scan report for 172.16.16.25
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.30
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.35
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.60
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.67
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.68
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.77
+Host is up (0.045s latency).
+Nmap scan report for 172.16.16.83
+Host is up (0.045s latency).
+# Nmap done at Sat Jan 22 17:06:30 2022 -- 256 IP addresses (10 hosts up) scanned in 16.73 seconds

@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:26:01 2022 as: nmap -sC -sV -oN 60.txt 172.16.16.60
+Nmap scan report for 172.16.16.60
+Host is up (0.043s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9:09:b1:7a:a9:dc:4c:91:e3:07:e7:f1:8a:11:dc:ef (RSA)
+|   256 86:fa:5c:40:ad:41:91:f6:75:77:46:08:f8:3e:81:11 (ECDSA)
+|_  256 c8:e5:d6:a1:f9:73:be:ed:86:d9:a5:de:57:ce:57:48 (ED25519)
+23/tcp  open  telnet  Linux telnetd
+80/tcp  open  http    Werkzeug httpd 0.16.0 (Python 3.6.8)
+|_http-server-header: Werkzeug/0.16.0 Python/3.6.8
+|_http-title: Launch Results!
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 22 17:26:17 2022 -- 1 IP address (1 host up) scanned in 15.78 seconds
