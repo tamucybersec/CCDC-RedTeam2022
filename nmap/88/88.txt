@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:37:06 2022 as: nmap -sC -sV -oN 88.txt 172.16.16.88
+# Nmap done at Sat Jan 22 17:37:10 2022 -- 1 IP address (0 hosts up) scanned in 3.55 seconds

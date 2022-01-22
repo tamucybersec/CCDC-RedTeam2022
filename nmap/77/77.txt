@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:28:25 2022 as: nmap -sC -sV -oN 77.txt 172.16.16.77
+Nmap scan report for 172.16.16.77
+Host is up (0.83s latency).
+Not shown: 997 closed ports
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 17:69:f8:46:d9:ec:f5:e5:57:d5:a4:4d:05:0c:af:eb (DSA)
+|   2048 e8:bf:1e:c6:c5:f4:7f:ab:c2:36:1e:ff:95:4c:32:9f (RSA)
+|   256 ea:5c:f2:2a:0e:dd:f3:47:dc:18:76:c8:de:72:4c:05 (ECDSA)
+|_  256 7d:bc:c2:77:b9:8c:63:ab:94:df:e9:af:9b:49:11:43 (ED25519)
+53/tcp    open  domain  ISC BIND 9.9.5-3ubuntu0.19 (Ubuntu Linux)
+| dns-nsid: 
+|_  bind.version: 9.9.5-3ubuntu0.19-Ubuntu
+12000/tcp open  cce4x?
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 22 17:31:34 2022 -- 1 IP address (1 host up) scanned in 189.34 seconds

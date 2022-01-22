@@ -1,0 +1,53 @@
+# Nmap 7.80 scan initiated Sat Jan 22 17:37:22 2022 as: nmap -sC -sV -oN 67.txt 172.16.16.67
+Nmap scan report for 172.16.16.67
+Host is up (0.047s latency).
+Not shown: 990 closed ports
+PORT     STATE SERVICE  VERSION
+7/tcp    open  echo
+9/tcp    open  discard?
+13/tcp   open  daytime
+19/tcp   open  chargen  Linux chargen
+21/tcp   open  ftp      vsftpd 3.0.2
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 172.15.15.3
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh      OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 09:f4:57:2a:58:af:06:41:7c:09:0b:04:32:8a:6b:30 (DSA)
+|   2048 fe:30:c9:c1:39:77:26:11:db:2f:ac:d6:24:a3:04:ba (RSA)
+|   256 d3:90:23:be:ea:ec:d4:b6:8f:c7:b3:19:a4:9f:3e:b2 (ECDSA)
+|_  256 68:35:a2:b2:b7:a0:a6:55:25:e2:0b:5e:d4:ba:7c:19 (ED25519)
+37/tcp   open  time     (32 bits)
+|_rfc868-time: 2022-01-22T23:40:01
+80/tcp   open  http     Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+2222/tcp open  ssh      Dropbear sshd 2013.60 (protocol 2.0)
+3306/tcp open  mysql    MySQL 5.5.62-0ubuntu0.14.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.62-0ubuntu0.14.04.1
+|   Thread ID: 70
+|   Capabilities flags: 63487
+|   Some Capabilities: Support41Auth, LongColumnFlag, Speaks41ProtocolOld, InteractiveClient, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolNew, ODBCClient, FoundRows, ConnectWithDatabase, SupportsTransactions, DontAllowDatabaseTableColumn, SupportsLoadDataLocal, IgnoreSigpipes, SupportsCompression, LongPassword, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: "`=Q^d\!.c+GfJ}Z(Yer
+|_  Auth Plugin Name: mysql_native_password
+Service Info: OSs: Linux, Unix; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 22 17:41:04 2022 -- 1 IP address (1 host up) scanned in 222.63 seconds
