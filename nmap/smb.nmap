@@ -1,0 +1,62 @@
+# Nmap 7.80 scan initiated Sat Jan 22 20:02:12 2022 as: nmap -p 135 -oA nmap/smb -iL hostlist.txt
+Nmap scan report for 172.16.16.30
+Host is up (0.088s latency).
+
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Nmap scan report for ec2-18-116-252-88.us-east-2.compute.amazonaws.com (18.116.252.88)
+Host is up (0.053s latency).
+
+PORT    STATE    SERVICE
+135/tcp filtered msrpc
+
+Nmap scan report for 172.16.16.25
+Host is up (0.099s latency).
+
+PORT    STATE  SERVICE
+135/tcp closed msrpc
+
+Nmap scan report for 172.16.16.60
+Host is up (0.087s latency).
+
+PORT    STATE  SERVICE
+135/tcp closed msrpc
+
+Nmap scan report for 172.16.16.77
+Host is up (0.085s latency).
+
+PORT    STATE  SERVICE
+135/tcp closed msrpc
+
+Nmap scan report for 172.16.16.67
+Host is up (0.085s latency).
+
+PORT    STATE  SERVICE
+135/tcp closed msrpc
+
+Nmap scan report for 172.16.16.35
+Host is up (0.087s latency).
+
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Nmap scan report for 172.16.16.9
+Host is up (0.084s latency).
+
+PORT    STATE  SERVICE
+135/tcp closed msrpc
+
+Nmap scan report for 172.16.16.83
+Host is up (0.085s latency).
+
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Nmap scan report for 172.16.16.68
+Host is up (0.085s latency).
+
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+# Nmap done at Sat Jan 22 20:02:12 2022 -- 10 IP addresses (10 hosts up) scanned in 1.04 seconds

@@ -1,0 +1,56 @@
+# Nmap 7.80 scan initiated Sat Jan 22 18:54:29 2022 as: nmap -p 21 -oA nmap/ftp -iL hostlist.txt
+Nmap scan report for 172.16.16.30
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for ec2-18-116-252-88.us-east-2.compute.amazonaws.com (18.116.252.88)
+Host is up (0.046s latency).
+
+PORT   STATE    SERVICE
+21/tcp filtered ftp
+
+Nmap scan report for 172.16.16.25
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for 172.16.16.60
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for 172.16.16.77
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for 172.16.16.67
+Host is up (0.046s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+Nmap scan report for 172.16.16.35
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for 172.16.16.9
+Host is up (0.046s latency).
+
+PORT   STATE  SERVICE
+21/tcp closed ftp
+
+Nmap scan report for 172.16.16.68
+Host is up (0.046s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+# Nmap done at Sat Jan 22 18:54:31 2022 -- 10 IP addresses (9 hosts up) scanned in 1.79 seconds
